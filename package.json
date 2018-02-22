@@ -1,0 +1,20 @@
+{
+  "name": "lambda-request-context",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "scripts": {
+    "prepush": "npm run test:depcheck; npm test",
+    "test": "mocha index.spec.js",
+    "test:watch": "nodemon --watch 'index.js' --watch 'index.spec.js' --exec 'reset; npm test'",
+    "test:depcheck": "depcheck"
+  },
+  "author": "HBK Engineering, LLC",
+  "license": "MIT",
+  "devDependencies": {
+    "depcheck": "^0.6.8"
+  }
+}
