@@ -23,8 +23,9 @@ All the methods:
 - clearAll()
 - replaceAllWith(object)
 - setRequestContext(ctx, event)
-- set: set(string)
+- set: set(string, string)
 - get: get(string)
+- getAll()
 
 ## Important Magic
 

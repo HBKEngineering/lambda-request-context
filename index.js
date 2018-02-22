@@ -16,7 +16,8 @@ let set = (key, value) => {
   global.CONTEXT[key] = value;
 };
 
-let get = () => global.CONTEXT || {};
+let getAll = () => global.CONTEXT || {};
+let get = (key) => getAll()[key];
 
 function setRequestContext(event, context) {
   let ctx = {};
@@ -53,5 +54,6 @@ module.exports = {
   replaceAllWith,
   setRequestContext,
   set: set,
-  get: get
+  get: get,
+  getAll: getAll
 };
