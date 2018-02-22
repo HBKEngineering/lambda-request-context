@@ -45,13 +45,6 @@ function setRequestContext(event, context) {
     ctx["x-correlation-id"] =  ctx.apiGatewayRequestId || ctx.lambdaRequestId || Date.now();
   }
 
-  if (event.headers && event.headers["Debug-Log-Enabled"] === "true") {
-    ctx["Debug-Log-Enabled"] = "true";
-  } else {
-    // enable debug logging on 5% of cases
-    ctx["Debug-Log-Enabled"] = Math.random() < 0.05 ? "true" : "false";
-  }
-
   replaceAllWith(ctx);
 }
 
