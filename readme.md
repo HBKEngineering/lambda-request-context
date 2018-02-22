@@ -16,7 +16,15 @@ And then in the handler function:
 
 ## Usage 
 
-From here, you can easily do a `requestContext.set('foo', 'bar')` and `requestContext.get('foo')` globally within your application. This will set the , and , when using the 
+From here, you can easily do a `requestContext.set('foo', 'bar')` and `requestContext.get('foo')` globally within your application. This will set the `foo` property with the value of `bar` and you can retrieve this value later on.
+
+All the methods:
+
+- clearAll()
+- replaceAllWith(object)
+- setRequestContext(ctx, event)
+- set: set(string)
+- get: get(string)
 
 ## Important Magic
 
