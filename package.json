@@ -15,6 +15,6 @@
   "author": "HBK Engineering, LLC",
   "license": "MIT",
   "devDependencies": {
-    "depcheck": "^0.6.8"
+    "depcheck": "^1.4.3"
   }
 }
